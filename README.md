@@ -1,20 +1,29 @@
-# Análise de Infraestrutura Client-Side: SentinelSDK no ChatGPT
+# openai-sentinelsdk-client-analysis-EN-
 
-Análise voluntária e independente focada na auditoria de isolamento de variáveis em memória e mapeamento de telemetria do componente SentinelSDK da OpenAI.
-
----
-
-## 📄 Relatório Técnico Completo
-
-O write-up detalhado com a metodologia, análises de segurança, propostas de mitigação e o retorno oficial da equipe de segurança da OpenAI foi compilado em um documento oficial.
-
-### 🔗 [Clique aqui para ler o Relatório Técnico (PDF)](./relatorio_sentinel.pdf)
+An independent, voluntary client-side security infrastructure audit focused on memory isolation analysis and telemetry mapping of OpenAI's SentinelSDK component within the ChatGPT web application.
 
 ---
 
-### 🛠️ Escopo da Auditoria
-* **Vulnerabilidade:** Vazamento de Escopo Global (Global Scope Leakage) via objeto `window`.
-* **Componente:** SentinelSDK (`sdk.js` / `frame.html`).
-* **Status:** Divulgação Responsável (*Responsible Disclosure*) enviada e encaminhada para a engenharia da OpenAI.
+## 📄 Technical Report
 
-*Para ler o documento com toda a formatação original, códigos-fonte demonstrativos e imagens de evidência, acesse o link do PDF acima.*
+The comprehensive write-up detailing the core methodology, structural security findings, architectural mitigation proposals, and the official triage response from OpenAI has been compiled into a standalone document.
+
+### 🔗 [Click here to read the Technical Report (PDF)](./relatorio_sentinel.pdf)
+
+---
+
+## 📸 Visual Evidence
+
+To inspect full-resolution technical verification screenshots, including browser console behavior, network telemetry logs (`/m` and `/ping` endpoints), and source tree component mappings, check the attachment below:
+
+### 🖼️ [View all Technical Audit Evidence (PDF)](./1printforevidence.pdf)
+
+---
+
+## 🛠️ Audit Scope
+* **Vulnerability Target:** Global Scope State Leakage via the `window` object (`__sentinel_token_pending`).
+* **Analyzed Components:** SentinelSDK infrastructure (`sdk.js` / `frame.html`).
+* **Disclosure Status:** Responsible Disclosure completed. Findings acknowledged and routed by OpenAI Security to their core engineering teams.
+
+---
+*Note: For the Brazilian Portuguese documentation and analysis, please refer to the dedicated localized repository.*
